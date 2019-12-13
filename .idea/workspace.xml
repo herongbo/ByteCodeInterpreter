@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4569334e-5f3d-4582-90bc-48110f7fcdcd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1RV3yh8o7oHRxRcki4Vv8SOGolU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569725910391" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ch03/classfile" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JDUSER\Downloads\jvm\src\ch03\classfile" />
+      <recent name="C:\Users\JDUSER\Downloads\jvm\src\ch03" />
+      <recent name="C:\Users\JDUSER\Downloads\jvm\src" />
+      <recent name="C:\Users\JDUSER\Downloads\jvm\src\ch02" />
+      <recent name="C:\Users\JDUSER\Downloads\jvm\src\lib" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ch02" />
+      <recent name="ch02.entry" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main (2)">
+    <configuration name="Log" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch02.utils.Log" />
+      <module name="jvm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch02.cmdparse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch01.Main" />
+      <module name="jvm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch03.Main" />
+      <module name="jvm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch02.Main" />
+      <module name="jvm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch02.cmdparse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch03_old.Main" />
+      <module name="jvm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch03_old.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Log" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main (3)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4569334e-5f3d-4582-90bc-48110f7fcdcd" name="Default Changelist" comment="" />
+      <created>1568722494779</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568722494779</updated>
+      <workItem from="1568722499310" duration="1824000" />
+      <workItem from="1568770154788" duration="943000" />
+      <workItem from="1569723903231" duration="1966000" />
+      <workItem from="1569726180692" duration="2203000" />
+      <workItem from="1569738693347" duration="36734000" />
+      <workItem from="1570525073247" duration="29000" />
+      <workItem from="1570525329713" duration="14000" />
+      <workItem from="1570531559835" duration="78000" />
+      <workItem from="1570531881342" duration="81000" />
+      <workItem from="1570532207279" duration="627000" />
+      <workItem from="1570532855806" duration="12000" />
+      <workItem from="1570532919387" duration="23000" />
+      <workItem from="1570533012685" duration="4000" />
+      <workItem from="1570534107469" duration="4772000" />
+      <workItem from="1570696901102" duration="9263000" />
+      <workItem from="1576199742025" duration="10266000" />
+      <workItem from="1576212325020" duration="1310000" />
+      <workItem from="1576216980614" duration="11661000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="465" y="198" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576224872645">
+      <screen x="0" y="0" width="1463" height="793" />
+    </state>
+    <state x="465" y="198" key="#com.intellij.fileTypes.FileTypeChooser/2560.0.1280.685/0.0.1463.793@0.0.1463.793" timestamp="1576224872645" />
+    <state x="537" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1576226017816">
+      <screen x="0" y="0" width="1463" height="793" />
+    </state>
+    <state x="537" y="97" key="#com.intellij.ide.util.MemberChooser/2560.0.1280.685/0.0.1463.793@0.0.1463.793" timestamp="1576226017816" />
+    <state width="1421" height="193" key="GridCell.Tab.0.bottom" timestamp="1576228410322">
+      <screen x="0" y="0" width="1463" height="793" />
+    </state>
+    <state width="1421" height="193" key="GridCell.Tab.0.bottom/2560.0.1280.685/0.0.1463.793@0.0.1463.793" timestamp="1576228410322" />
+    <state width="1421" height="193" key="GridCell.Tab.0.center" timestamp="1576228410322">
+      <screen x="0" y="0" width="1463" height="793" />
+    </state>
+    <state width="1421" height="193" key="GridCell.Tab.0.center/2560.0.1280.685/0.0.1463.793@0.0.1463.793" timestamp="1576228410322" />
+    <state width="1421" height="193" key="GridCell.Tab.0.left" timestamp="1576228410322">
+      <screen x="0" y="0" width="1463" height="793" />
+    </state>
+    <state width="1421" height="193" key="GridCell.Tab.0.left/2560.0.1280.685/0.0.1463.793@0.0.1463.793" timestamp="1576228410322" />
+    <state width="1421" height="193" key="GridCell.Tab.0.right" timestamp="1576228410322">
+      <screen x="0" y="0" width="1463" height="793" />
+    </state>
+    <state width="1421" height="193" key="GridCell.Tab.0.right/2560.0.1280.685/0.0.1463.793@0.0.1463.793" timestamp="1576228410322" />
+    <state width="1421" height="243" key="GridCell.Tab.1.bottom" timestamp="1576212253943">
+      <screen x="0" y="0" width="1463" height="793" />
+    </state>
+    <state width="1421" height="243" key="GridCell.Tab.1.bottom/2560.0.1280.685/0.0.1463.793@0.0.1463.793" timestamp="1576212253943" />
+    <state width="1421" height="243" key="GridCell.Tab.1.center" timestamp="1576212253943">
+      <screen x="0" y="0" width="1463" height="793" />
+    </state>
+    <state width="1421" height="243" key="GridCell.Tab.1.center/2560.0.1280.685/0.0.1463.793@0.0.1463.793" timestamp="1576212253943" />
+    <state width="1421" height="243" key="GridCell.Tab.1.left" timestamp="1576212253942">
+      <screen x="0" y="0" width="1463" height="793" />
+    </state>
+    <state width="1421" height="243" key="GridCell.Tab.1.left/2560.0.1280.685/0.0.1463.793@0.0.1463.793" timestamp="1576212253942" />
+    <state width="1421" height="243" key="GridCell.Tab.1.right" timestamp="1576212253943">
+      <screen x="0" y="0" width="1463" height="793" />
+    </state>
+    <state width="1421" height="243" key="GridCell.Tab.1.right/2560.0.1280.685/0.0.1463.793@0.0.1463.793" timestamp="1576212253943" />
+    <state x="412" y="134" width="642" height="524" key="find.popup" timestamp="1576227535841">
+      <screen x="0" y="0" width="1463" height="793" />
+    </state>
+    <state x="412" y="134" width="642" height="524" key="find.popup/2560.0.1280.685/0.0.1463.793@0.0.1463.793" timestamp="1576227535841" />
+    <state x="394" y="114" width="672" height="678" key="search.everywhere.popup" timestamp="1576227518438">
+      <screen x="0" y="0" width="1463" height="793" />
+    </state>
+    <state x="394" y="114" width="672" height="678" key="search.everywhere.popup/2560.0.1280.685/0.0.1463.793@0.0.1463.793" timestamp="1576227518438" />
+  </component>
+</project>
