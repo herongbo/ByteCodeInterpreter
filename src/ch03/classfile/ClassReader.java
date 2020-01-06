@@ -21,12 +21,8 @@ public class ClassReader {
 
     // 读取两个字节
     public long readUint16() {
-        String str = Integer.toString(data[0] & 0xff, 16)
-                    + Integer.toString(data[1] & 0xff, 16);
-        System.out.println(">>" + str);
-
-        long value = Long.parseLong(str, 16);
-
+        long value = (data[0] & 0xff) * 0xff + data[1] & 0xff;
+        System.out.println(">>" + (data[0] & 0xff) + " " + (data[1] & 0xff));
         // 修改数组
         byte[] temp = new byte[data.length - 2];
         System.arraycopy(data, 2, temp, 0, temp.length);
@@ -37,9 +33,9 @@ public class ClassReader {
     // 读取 u4类型的字节
     public long readUnit32() {
         String str = Integer.toString(data[0] & 0xff, 16)
-                    + Integer.toString(data[1] & 0xff, 16)
-                    + Integer.toString(data[2] & 0xff, 16)
-                    + Integer.toString(data[3] & 0xff, 16);
+                + Integer.toString(data[1] & 0xff, 16)
+                + Integer.toString(data[2] & 0xff, 16)
+                + Integer.toString(data[3] & 0xff, 16);
         long value = Long.parseLong(str, 16);
         System.out.println(">>>>" + Long.toString(value, 16));
 
@@ -48,6 +44,16 @@ public class ClassReader {
         System.arraycopy(data, 4, temp, 0, temp.length);
         data = temp;
 
+        return value;
+    }
+
+    public long readUnit64() {
+        long value = (data[0] & 0xff) * 0xff + data[1] & 0xff;
+        System.out.println(">>" + (data[0] & 0xff) + " " + (data[1] & 0xff));
+        // 修改数组
+        byte[] temp = new byte[data.length - 2];
+        System.arraycopy(data, 2, temp, 0, temp.length);
+        data = temp;
         return value;
     }
 
@@ -71,4 +77,6 @@ public class ClassReader {
         data = temp;
         return keep;
     }
+
+
 }

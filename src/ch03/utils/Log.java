@@ -8,11 +8,11 @@ public class Log {
     }
 
     public static void log(String s) {
-        log(s, 10, true);
+        log(s, 1, true);
     }
 
     public static void log(String s, boolean show) {
-        log(s, 10, show);
+        log(s, 1, show);
     }
 
     public static void log(String s, int times, boolean show) {
@@ -22,7 +22,7 @@ public class Log {
 
         for (int i = 0; i < times * 4; i++) {
             try {
-                Thread.sleep(30);
+                Thread.sleep(10);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
