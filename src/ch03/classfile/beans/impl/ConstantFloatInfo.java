@@ -4,9 +4,9 @@ import ch03.classfile.ClassReader;
 import ch03.classfile.beans.ConstantInfo;
 
 public class ConstantFloatInfo extends ConstantInfo {
-    int tag;
-    int bytes;
-    float val;
+    public int tag;
+    public int bytes;
+    public float val;
 
     @Override
     /**
@@ -14,6 +14,6 @@ public class ConstantFloatInfo extends ConstantInfo {
      */
     public void readInfo(ClassReader reader) {
         this.bytes = (int) reader.readUnit32();
-        this.val = (float)bytes;
+        this.val = Float.intBitsToFloat(bytes);
     }
 }

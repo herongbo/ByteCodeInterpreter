@@ -8,11 +8,11 @@ public class Log {
     }
 
     public static void log(String s) {
-        log(s, 1, true);
+        log(s, 00, true);
     }
 
     public static void log(String s, boolean show) {
-        log(s, 1, show);
+        log(s, 00, show);
     }
 
     public static void log(String s, int times, boolean show) {

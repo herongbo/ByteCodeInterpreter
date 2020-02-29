@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <source_groups>
+        <source_group_11e25d51-ae37-4b9b-8cd6-c6624dbcc88d>
+            <class_paths>
+                <class_path>src/lib/commons-cli-1.4.jar</class_path>
+                <class_path>src</class_path>
+            </class_paths>
+            <java_standard>8</java_standard>
+            <name>Java Source Group</name>
+            <source_extensions>
+                <source_extension>.java</source_extension>
+            </source_extensions>
+            <source_paths>
+                <source_path>src/ch03</source_path>
+                <source_path>src/ch03/classfile</source_path>
+                <source_path>src/ch03/classpath</source_path>
+                <source_path>src/ch03/cmdparse</source_path>
+                <source_path>src/ch03/utils</source_path>
+                <source_path>src/ch03/Main.java</source_path>
+                <source_path>src/ch03/readme.md</source_path>
+            </source_paths>
+            <status>enabled</status>
+            <type>Java Source Group</type>
+            <use_jre_system_library>1</use_jre_system_library>
+        </source_group_11e25d51-ae37-4b9b-8cd6-c6624dbcc88d>
+    </source_groups>
+    <version>8</version>
+</config>

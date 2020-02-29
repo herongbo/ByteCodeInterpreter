@@ -4,9 +4,9 @@ import ch03.classfile.ClassReader;
 import ch03.classfile.beans.ConstantInfo;
 
 public class ConstantDoubleInfo extends ConstantInfo {
-    int tag;
-    long bytes;
-    double val;
+    public int tag;
+    public long bytes;
+    public double val;
 
     @Override
     /**
@@ -14,6 +14,7 @@ public class ConstantDoubleInfo extends ConstantInfo {
      */
     public void readInfo(ClassReader reader) {
         this.bytes = reader.readUnit64();
-        this.val = (double)bytes;
+        System.out.println(Double.longBitsToDouble(bytes));
+        this.val = Double.longBitsToDouble(bytes);
     }
 }

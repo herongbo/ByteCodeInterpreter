@@ -25,7 +25,7 @@ public class ConstantPoolParser {
     final static int CONSTANT_MethodHandle = 15;
     final static int CONSTANT_MethodType = 16;
     final static int CONSTANT_InvokeDynamic = 18;
-
+    public ConstantInfo[] cp;
 
     // 奇怪的地方：将ConstantPool定义为ConstantInfo数组
     // ConstantPool[] constantInfo;
@@ -33,38 +33,97 @@ public class ConstantPoolParser {
     // 按照索引解析常量池
     public ConstantInfo[] readConstantPool(ClassReader reader) {
         long cpCount = (int) reader.readUint16();
-        System.out.println("constantPoolsize " + cpCount);
+        System.out.println("Constant_pool");
+        System.out.println("constant_pool_count: " + cpCount);
 
-        ConstantInfo[] cp = new ConstantInfo[(int) cpCount];
+        cp = new ConstantInfo[(int) cpCount];
 
         // 常量池的索引从1开始，并且比常量池大小小1
         for (int i = 1; i < cpCount; i++) {
-            System.out.println();
+            System.out.println("#"+i);
             // 读取一个常量块，不过为什么需要cp呢？
             cp[i] = readConstantInfo(reader, cp);
-            System.out.println("index:" + i);
+            if(cp[i] == null){
+                System.out.println("error! this is null");
+            }
+            System.out.println(cp[i].getClass().getSimpleName());
             // 正在修改，ConstantPool对象没有type属性？
             // 计算下一次的索引
             if (ConstantLongInfo.class.equals(cp[i].getClass())) {
+                i++;
+            }else if (ConstantDoubleInfo.class.equals(cp[i].getClass())) {
                 i++;
             }
 
             /**
              * 常量池内容测试
              */
-            System.out.println(cp[i].getClass().getSimpleName());
+        }
+
+        for (int i = 1; i < cpCount; i++) {
+            if(cp[i] == null){
+                continue;
+            }
+
+            System.out.print("#" + i);
             switch (cp[i].getClass().getSimpleName()) {
                 case "ConstantIntegerInfo":
                     ConstantIntegerInfo c = (ConstantIntegerInfo) cp[i];
-                    System.out.println("ConstantIntegerInfo " + c.val);
+                    System.out.println("(Integer):" + c.val);
+                    break;
                 case "ConstantUTF8Info":
                     ConstantUTF8Info c1 = (ConstantUTF8Info) cp[i];
-                    System.out.println("ConstantUTF8Info " + c1.string);
+                    System.out.println("(Utf8):" + c1.string);
+                    break;
                 case "ConstantClassInfo":
                     ConstantClassInfo c2 = (ConstantClassInfo) cp[i];
-                    System.out.println("ConstantClassInfo" + c2.name());
-                default:
+                    System.out.println("(class):" + c2.name());
+                    break;
+                case "ConstantNameAndTypeInfo":
+                    ConstantNameAndTypeInfo c3 = (ConstantNameAndTypeInfo) cp[i];
+                    System.out.println("(NameAndType):" + ((ConstantUTF8Info)cp[c3.name_index]).string);
+                    System.out.println("\tname_index:" + c3.name_index);
+                    System.out.println("\tdescriptor_index:" + c3.descriotorIndex);
+                    break;
+                case "ConstantMethodrefInfo":
+                    ConstantMethodrefInfo c4 = (ConstantMethodrefInfo) cp[i];
+                    int name_index = ((ConstantNameAndTypeInfo)cp[c4.name_and_type_index]).name_index;
+                    System.out.println("(Methodref):" + ((ConstantUTF8Info)cp[name_index]).string);
 
+                    System.out.println("\tname_and_type_index:" + c4.name_and_type_index);
+                    System.out.println("\tclass_index" + c4.class_index);
+                    break;
+                case "ConstantFieldrefInfo":
+                    ConstantFieldrefInfo c5 = (ConstantFieldrefInfo) cp[i];
+                    int name_index1 = ((ConstantNameAndTypeInfo)cp[c5.name_and_type_index]).name_index;
+                    System.out.println("(Fieldref):" + ((ConstantUTF8Info)cp[name_index1]).string);
+                    System.out.println("\tname_and_typeindex:" + c5.name_and_type_index);
+                    System.out.println("\tclass_index" + c5.class_index);
+                    break;
+                case "ConstantInterfacemethodrefInfo":
+                    ConstantInterfacemethodrefInfo c6 = (ConstantInterfacemethodrefInfo) cp[i];
+                    int name_index2 = ((ConstantNameAndTypeInfo)cp[c6.name_and_type_index]).name_index;
+                    System.out.println("(Interfaceref):" + ((ConstantUTF8Info)cp[name_index2]).string);
+                    System.out.println("\tname_and_type_index" + c6.name_and_type_index);
+                    System.out.println("\tclass_index:" + c6.class_index);
+                    break;
+                case "ConstantDoubleInfo":
+                    ConstantDoubleInfo c7 = (ConstantDoubleInfo) cp[i];
+                    System.out.println("(Double):" + c7.val);
+                    break;
+                case "ConstantStringInfo":
+                    ConstantStringInfo c8 = (ConstantStringInfo) cp[i];
+                    System.out.println("(String):" + c8.string());
+                    break;
+                case "ConstantFloatInfo":
+                    ConstantFloatInfo c9 = (ConstantFloatInfo) cp[i];
+                    System.out.println("(Float):" + c9.val);
+                    break;
+                case "ConstantLongInfo":
+                    ConstantLongInfo c10 = (ConstantLongInfo) cp[i];
+                    System.out.println("(Long):" + c10.val);
+                    break;
+                default:
             }
         }
         return cp;
@@ -74,8 +133,10 @@ public class ConstantPoolParser {
     public ConstantInfo readConstantInfo(ClassReader reader, ConstantInfo[] cp) {
         // 先读一个字节，看看是什么类型
         int tag = (int) reader.readUint8();
+
         // 根据tag创建类型
         ConstantInfo c = newConstantInfo(tag, cp);
+        System.out.println(c==null);
         // 调用这个对象自己的read方法读数据
         c.readInfo(reader);
         return c;
@@ -92,6 +153,7 @@ public class ConstantPoolParser {
         if (index >= 1 && index < cp.length) {
             return cp[index];
         } else {
+            System.err.println(index);
             new ArrayIndexOutOfBoundsException("Invallid constant pool index!");
             return null;
         }
@@ -104,6 +166,8 @@ public class ConstantPoolParser {
                 return new ConstantIntegerInfo();
             case CONSTANT_Float:
                 return new ConstantFloatInfo();
+            case CONSTANT_Double:
+                return new ConstantDoubleInfo();
             case CONSTANT_Long:
                 return new ConstantLongInfo();
             case CONSTANT_Utf8:
@@ -120,6 +184,12 @@ public class ConstantPoolParser {
                 return new ConstantFieldrefInfo(this);
             case CONSTANT_InterfaceMethodref:
                 return new ConstantInterfacemethodrefInfo(this);
+            case CONSTANT_MethodType:
+                return new ConstantMethodTypeInfo();
+            case CONSTANT_MethodHandle:
+                return new ConstantMethodHandleInfo();
+            case CONSTANT_InvokeDynamic:
+                return new ConstantInvokeDynamicInfo();
             default:
                 System.err.println("java.lang.ClassFormatError: constant pool tag");
                 break;
@@ -128,23 +198,23 @@ public class ConstantPoolParser {
     }
 
     // getNameAndType方法从常量池查找字段或方法的名字和描述符，代码如下：
-    public String getNameAndType(ConstantInfo[] cp, int index) {
+    public String getNameAndType(int index) {
         ConstantNameAndTypeInfo ntInfo = (ConstantNameAndTypeInfo) getConstantInfo(cp, index);
 //        String name = getUtf8(cp,ntInfo.nameIndex);
 //        String type = getUtf8(cp,ntInfo.descriptorIndex);
         return null;
     }
 
-    public String getClassName(ConstantInfo[] cp, int index) {
+    public String getClassName(int index) {
         ConstantInfo constantInfo = getConstantInfo(cp, index);
 //        return getUtf8(constantInfo.nameIndex);
         return null;
     }
 
     // getUtf-8方法从常量池查找UTF-8字符串
-    public String getUtf8(ConstantInfo[] cp, int index) {
-        ConstantInfo utf8Info = getConstantInfo(cp, index);
+    public String getUtf8(int index) {
+        ConstantUTF8Info utf8Info = (ConstantUTF8Info) getConstantInfo(cp, index);
         // 结果应该有问题
-        return utf8Info.toString();
+        return utf8Info.string;
     }
 }

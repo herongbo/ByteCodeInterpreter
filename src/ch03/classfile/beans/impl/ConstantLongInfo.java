@@ -4,9 +4,9 @@ import ch03.classfile.ClassReader;
 import ch03.classfile.beans.ConstantInfo;
 
 public class ConstantLongInfo extends ConstantInfo {
-    int tag;
-    long bytes;
-    long val;
+    public int tag;
+    public long bytes;
+    public long val;
 
     @Override
     /**

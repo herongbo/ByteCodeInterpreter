@@ -45,10 +45,17 @@ public class ClassFile {
     public void read(ClassReader reader) {
         this.readAndCheckMagic(reader); //魔数
         this.readAndCheckVersion(reader); //minor_version major_version
-        this.constantPool = readConstantPool(reader);
-//        this.accessFlags = reader.readUint16();
-//        this.thisClass = reader.readUint16();
-//        this.superClass = reader.readUint16();
+        this.constantPool = readConstantPool(reader); // 读取常量池
+        this.accessFlags = reader.readUint16();
+            System.out.println("accessFlag"+accessFlags);
+        this.thisClass = reader.readUint16();
+            System.out.println("thisClass"+thisClass);
+        this.superClass = reader.readUint16();
+            System.out.println("superClass"+superClass);
+        int interfacesCount = (int)reader.readUint16();
+            System.out.println("interfacesCount"+interfacesCount);
+
+        System.exit(0);
 //        this.interfaces = reader.readUint16s();
 //        this.fields
 //        this.methods

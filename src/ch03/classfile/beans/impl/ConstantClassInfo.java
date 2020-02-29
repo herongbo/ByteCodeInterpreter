@@ -7,7 +7,6 @@ import ch03.classfile.beans.ConstantPoolParser;
 public class ConstantClassInfo extends ConstantInfo {
     public int tag;
     public int name_index;
-    public ConstantInfo[] cp;
     public ConstantPoolParser cpp;
 
     public ConstantClassInfo(ConstantPoolParser cpp) {
@@ -23,7 +22,7 @@ public class ConstantClassInfo extends ConstantInfo {
     }
 
     public String name() {
-        return cpp.getUtf8(cp,name_index);
+        return cpp.getUtf8(name_index);
     }
 }
 

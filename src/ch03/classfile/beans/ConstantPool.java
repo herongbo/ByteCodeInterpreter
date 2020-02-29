@@ -4,15 +4,9 @@ import ch03.classfile.ClassReader;
 
 // 解析常量池
 public class ConstantPool {
-
-
-
-
-
     public ConstantPool getConstantInfo(int index, ConstantPool[] cp) {
         return cp[index];
     }
-
 
     public ConstantPool getConstantInfo() {
         return null;

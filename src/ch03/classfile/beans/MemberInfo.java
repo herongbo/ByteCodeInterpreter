@@ -1,9 +1,10 @@
 package ch03.classfile.beans;
 
+// 同时用于解析Field 和 Method
 public class MemberInfo {
-    ConstantPool cp;
-    long accessFlags;
-    long nameIndx;
-    long desceiptorIndex;
-//    AttributeInfo[] attributes;
+    public ConstantInfo[] cp;
+    public int accessFlags;
+    public int nameIndex;
+    public int desceiptorIndex;
+    public AttributeInfo[] attributes;
 }

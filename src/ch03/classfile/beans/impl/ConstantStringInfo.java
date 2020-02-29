@@ -5,10 +5,9 @@ import ch03.classfile.beans.ConstantInfo;
 import ch03.classfile.beans.ConstantPoolParser;
 
 public class ConstantStringInfo extends ConstantInfo {
-    int tag;
-    int string_index;
-    ConstantInfo[] cp;
-    int stringIndex;
+    public int tag;
+    public int string_index;
+    public  ConstantInfo[] cp;
     // 需要继续查找索引的需要用到
     ConstantPoolParser cpp;
 
@@ -28,6 +27,6 @@ public class ConstantStringInfo extends ConstantInfo {
 
     // 按索引从常量池中查找字符串，利用ConstantPoolParser中的方法
     public String string() {
-        return cpp.getUtf8(cp, stringIndex);
+        return cpp.getUtf8(string_index);
     }
 }

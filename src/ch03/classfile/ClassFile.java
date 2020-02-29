@@ -1,8 +1,8 @@
 package ch03.classfile;
 
-import ch03.classfile.beans.ConstantInfo;
-import ch03.classfile.beans.ConstantPool;
-import ch03.classfile.beans.ConstantPoolParser;
+import ch03.classfile.beans.*;
+import ch03.classfile.beans.impl.ConstantClassInfo;
+import ch03.classfile.beans.impl.ConstantUTF8Info;
 
 import java.util.Arrays;
 
@@ -16,9 +16,6 @@ public class ClassFile {
     long thisClass;//uint 16
     long superClass;// uint 16
     long[] interfaces;//[]uint 16
-    //    MemberInfo[] fields;
-    //    MemberInfo[] methods;
-    //    AttributeInfo[] attributes;
 
     // 把byte[]解析成ClassFile结构体
     public ClassFile parse(byte[] classData) {
@@ -33,22 +30,55 @@ public class ClassFile {
         this.readAndCheckVersion(reader); //minor_version major_version
         this.constantPool = new ConstantPoolParser().readConstantPool(reader);
 
-        // 类访问标志
+        // 类访问标志，第六章完善
         this.accessFlags = reader.readUint16();
-        System.out.println(Long.toString(this.accessFlags, 16));
-//        this.thisClass = reader.readUint16();
-//        this.superClass = reader.readUint16();
-//        this.interfaces = reader.readUint16s();
-//        this.fields = readMembers(reader,self.constantPool)
-//        this.methods = readMembers(reader,self.constantPool)
-//        this.attributes = readAttributes(reader,self.constantPool)
+            System.out.println("access_flag:" + accessFlags);
+        this.thisClass = reader.readUint16();
+        ConstantClassInfo classInfo = (ConstantClassInfo)constantPool[(int)thisClass];
+            System.out.println("this_class:#"+ thisClass + classInfo.name());
+        this.superClass = reader.readUint16();
+        ConstantClassInfo superInfo = (ConstantClassInfo)constantPool[(int)superClass];
+            System.out.println("super_class:#"+ superClass + superInfo.name());
+        int interfacesCount = (int)reader.readUint16();
+            System.out.println("interfaces_count:"+interfacesCount);
+
+        System.out.println("interfaces");
+        //interface没有解析
+        MemberInfo[] fields = new MemberInfoParser().readMembers(reader,constantPool);
+        System.out.println("field_count:"+ fields.length);
+        for (int i = 0; i < fields.length; i++) {
+            System.out.println("#" + (i+1));
+            System.out.println("\taccess_flag:" + fields[i].accessFlags);
+            System.out.println("\tname_index:" + fields[i].nameIndex);
+            System.out.println("\tdescriptor_index:" + fields[i].desceiptorIndex);
+            System.out.println("\tattributes_count:" + fields[i].attributes.length);
+            System.out.println("\tattributes:" + fields[i].attributes);
+        }
+
+        MemberInfo[] methods = new MemberInfoParser().readMembers(reader,constantPool);
+        System.out.println("method_count:"+ methods.length);
+        for (int i = 0; i < methods.length; i++) {
+            System.out.println("#" + i);
+            System.out.println("\taccess_flag:" + methods[i].accessFlags);
+            System.out.println("\tname_index:" + methods[i].nameIndex);
+            System.out.println("\tdescriptor_index:" + methods[i].desceiptorIndex);
+            System.out.println("\tattributes_count:" + methods[i].attributes.length);
+            System.out.println("\tattributes:");
+        }
+
+        AttributeInfo[] attributeInfos = new AttributeInfoParser().readAttributes(reader,constantPool);
+        System.out.println("attributes_count:"+ attributeInfos.length);
+        System.out.println("attributes");
+        for (int i = 0; i < attributeInfos.length; i++) {
+            System.out.println("#" + i);
+            System.out.println(attributeInfos[i]);
+        }
     }
 
     // 2 检查魔数
     public void readAndCheckMagic(ClassReader classReader) {
         this.magic = classReader.readUnit32();
-        System.out.println(magic);
-        System.out.println(magic == 0xCAFEBABEL);
+        System.out.println("magic:0x" + Long.toHexString(magic));
         if (this.magic != 0xCAFEBABEL) {
             new ClassFormatError();
         }
@@ -59,6 +89,8 @@ public class ClassFile {
     public void readAndCheckVersion(ClassReader classReader) {
         this.minorVersin = classReader.readUint16();
         this.majorVersion = classReader.readUint16();
+        System.out.println("minor_version" + minorVersin);
+        System.out.println("major_version" + majorVersion);
         // 检查版本号 主版本号 和 次版本号
         if (this.majorVersion != 0 || this.majorVersion < 56) {
             new UnsupportedClassVersionError();

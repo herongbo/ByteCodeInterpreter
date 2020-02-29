@@ -24,7 +24,8 @@ public class Main {
 //            String[] cmdArgs = {"java","java.util.Scanner"};
             // 测试ClassPath
 //            String[] cmdArgs = {"java", "-cp", "C:\\Users\\JDUSER\\Downloads\\jvm\\out\\production\\jvm", "ch02.cmdparse.Parser"};
-            String[] cmdArgs = {"java", "-cp", "C:\\Users\\JDUSER\\Documents\\我的坚果云\\Desktop\\coding\\mycode\\workspace\\xf\\bin\\xf", "Number"};
+//            String[] cmdArgs = {"java", "-cp", "C:\\Users\\JDUSER\\Documents\\我的坚果云\\Desktop\\coding\\mycode\\workspace\\xf\\bin\\xf", "Number"};
+            String[] cmdArgs = {"java", "-cp", "C:\\Users\\JDUSER\\Documents\\我的坚果云\\Desktop\\coding\\mycode\\workspace\\xf\\bin\\xf", "Test"};
 
             // 打印原始命令
             System.out.println(Arrays.asList(cmdArgs));

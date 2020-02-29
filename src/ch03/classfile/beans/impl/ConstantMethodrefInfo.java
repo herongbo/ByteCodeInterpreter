@@ -5,11 +5,10 @@ import ch03.classfile.beans.ConstantInfo;
 import ch03.classfile.beans.ConstantPoolParser;
 
 public class ConstantMethodrefInfo extends ConstantInfo {
-    int tag;
-    int class_index;
-    int name_and_type_index;
+    public int tag;
+    public int class_index;
+    public int name_and_type_index;
     ConstantPoolParser cpp;
-    ConstantInfo[] cp;
 
     public ConstantMethodrefInfo(ConstantPoolParser cpp) {
         this.cpp = cpp;
@@ -29,7 +28,7 @@ public class ConstantMethodrefInfo extends ConstantInfo {
      * 和CONSTANT_NameAndType_info常量，先定义一个同意的结构体ConstantMemberrefInfo来表示
      * 这3种常量
      */
-    public String ClassName(ConstantMethodrefInfo info) {
-        return cpp.getNameAndType(info.cp, name_and_type_index);
+    public String ClassName() {
+        return cpp.getNameAndType(name_and_type_index);
     }
 }

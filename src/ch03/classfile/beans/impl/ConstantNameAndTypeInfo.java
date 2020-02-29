@@ -14,9 +14,9 @@ import ch03.classfile.beans.ConstantPoolParser;
  * 字段或方法名由name_index给出，字段或方法的描述符由name_index给出
  */
 public class ConstantNameAndTypeInfo extends ConstantInfo {
-    int tag;
-    int name_index;
-    int descriotorIndex;
+    public int tag;
+    public int name_index;
+    public int descriotorIndex;
 
     @Override
     /**
