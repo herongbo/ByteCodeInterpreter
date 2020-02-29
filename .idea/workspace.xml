@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4569334e-5f3d-4582-90bc-48110f7fcdcd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/demo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +52,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569725910391" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/Neo4jdemo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -75,11 +76,11 @@
       <recent name="ch03.classfile.beans.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JDUSER\Downloads\jvm\img" />
       <recent name="C:\Users\JDUSER\Downloads\jvm\src\ch03\classfile" />
       <recent name="C:\Users\JDUSER\Downloads\jvm\src\ch03" />
       <recent name="C:\Users\JDUSER\Downloads\jvm\src" />
       <recent name="C:\Users\JDUSER\Downloads\jvm\src\ch02" />
-      <recent name="C:\Users\JDUSER\Downloads\jvm\src\lib" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main (2)">
@@ -203,7 +204,7 @@
       <workItem from="1578305921758" duration="23817000" />
       <workItem from="1578466665370" duration="27000" />
       <workItem from="1582722784974" duration="29004000" />
-      <workItem from="1582870395722" duration="38030000" />
+      <workItem from="1582870395722" duration="38156000" />
     </task>
     <servers />
   </component>
