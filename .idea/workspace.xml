@@ -2,82 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4569334e-5f3d-4582-90bc-48110f7fcdcd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jvm.srctrlbm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm.srctrldb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm.srctrlprj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/AttributeInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/AttributeInfoParser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/MemberInfoParser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/CodeAttribute$ExceptionTableEntry.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/CodeAttribute.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantInvokeDynamicInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantMethodHandleInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantMethodTypeInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantValueAttribute.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/DeprecatedAttribute.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ExceptionsAttribute.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/LineNumberTableAttribute$LineNumberTableEntry.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/LineNumberTableAttribute.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/LocalVariableTableAttribute$LocalVariableTableEntry.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/LocalVariableTableAttribute.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/SourceFileAttribute.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/StackMapTableAttribute.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/SyntheticAttribute.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/UnparsedAttribute.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/AttributeInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/AttributeInfoParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/MemberInfoParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/CodeAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantInvokeDynamicInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantMethodHandleInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantMethodTypeInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantValueAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/DeprecatedAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ExceptionsAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/LineNumberTableAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/LocalVariableTableAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/SourceFileAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/StackMapTableAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/SyntheticAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/UnparsedAttribute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch03/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch03/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/ClassFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/ClassFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/ClassReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/ClassReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/ConstantPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/ConstantPool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/ConstantPoolParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/ConstantPoolParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/FieldInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/MemberInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/MemberInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantClassInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantClassInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantDoubleInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantDoubleInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantFieldrefInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantFieldrefInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantFloatInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantFloatInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantInterfacemethodrefInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantInterfacemethodrefInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantLongInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantLongInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantMethodrefInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantMethodrefInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantNameAndTypeInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantNameAndTypeInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantStringInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch03/classfile/beans/impl/ConstantStringInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch03/utils/Log.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch03/utils/Log.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch03_old/entry/ClassFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch03_old/entry/ClassFile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch03/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch03/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch03/classfile/ClassFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch03/classfile/ClassFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch03/classfile/ClassReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch03/classfile/ClassReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch03/classfile/beans/ConstantPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/ConstantPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch03/classfile/beans/ConstantPoolParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/ConstantPoolParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch03/classfile/beans/FieldInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch03/classfile/beans/MemberInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/MemberInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantClassInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantClassInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantDoubleInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantDoubleInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantFieldrefInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantFieldrefInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantFloatInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantFloatInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantInterfacemethodrefInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantInterfacemethodrefInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantLongInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantLongInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantMethodrefInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantMethodrefInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantNameAndTypeInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantNameAndTypeInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantStringInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch03/classfile/beans/impl/ConstantStringInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch03/utils/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch03/utils/Log.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch03_old/entry/ClassFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch03_old/entry/ClassFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,7 +203,7 @@
       <workItem from="1578305921758" duration="23817000" />
       <workItem from="1578466665370" duration="27000" />
       <workItem from="1582722784974" duration="29004000" />
-      <workItem from="1582870395722" duration="37347000" />
+      <workItem from="1582870395722" duration="37511000" />
     </task>
     <servers />
   </component>
