@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="jvm" uuid="113b4fb8-6ec2-4d55-b0e9-2dc63338c05b">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\JDUSER\Downloads\jvm\jvm.srctrlbm</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="jvm [2]" uuid="d54b0451-c264-489a-9d72-cd7984d5fed5">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\JDUSER\Downloads\jvm\jvm.srctrldb</jdbc-url>
+    </data-source>
+  </component>
+</project>
