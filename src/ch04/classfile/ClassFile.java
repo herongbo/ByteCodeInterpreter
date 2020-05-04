@@ -8,6 +8,7 @@ import java.util.Arrays;
 
 public class ClassFile {
 
+
     long magic; //uint32
     long minorVersin;//uint 16
     long majorVersion;//uint 16
@@ -33,6 +34,7 @@ public class ClassFile {
         // 类访问标志，第六章完善
         this.accessFlags = reader.readUint16();
             System.out.println("access_flag:" + accessFlags);
+        // 当前类
         this.thisClass = reader.readUint16();
         ConstantClassInfo classInfo = (ConstantClassInfo)constantPool[(int)thisClass];
             System.out.println("this_class:#"+ thisClass + classInfo.name());

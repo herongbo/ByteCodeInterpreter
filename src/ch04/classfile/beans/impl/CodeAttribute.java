@@ -31,6 +31,7 @@ public class CodeAttribute extends AttributeInfo {
         this.maxStack = (int)reader.readUint16();
         this.maxLocals = (int)reader.readUint16();
         int codeLength = (int)reader.readUnit32();
+        //code直接读成byte
         this.code = reader.readBytes(codeLength);
         this.exceptionTable = readExceptionTable(reader);
         this.attributes = new AttributeInfoParser().readAttributes(reader,cp);
