@@ -136,7 +136,7 @@ public class ConstantPoolParser {
 
         // 根据tag创建类型
         ConstantInfo c = newConstantInfo(tag, cp);
-        System.out.println(c==null);
+//        System.out.println(c==null);
         // 调用这个对象自己的read方法读数据
         c.readInfo(reader);
         return c;
@@ -160,7 +160,7 @@ public class ConstantPoolParser {
     }
 
     public ConstantInfo newConstantInfo(int tag, ConstantInfo[] cp) {
-        System.out.println("tag；" + tag);
+        System.out.println("tag:" + tag);
         switch (tag) {
             case CONSTANT_Integer:
                 return new ConstantIntegerInfo();

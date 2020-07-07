@@ -2,168 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4569334e-5f3d-4582-90bc-48110f7fcdcd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ch05/Interpreter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/ClassFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/ClassReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/AttributeInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/AttributeInfoParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/ConstantInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/ConstantPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/ConstantPoolParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/MemberInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/MemberInfoParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/CodeAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/ConstantClassInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/ConstantDoubleInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/ConstantFieldrefInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/ConstantFloatInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/ConstantIntegerInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/ConstantInterfacemethodrefInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/ConstantInvokeDynamicInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/ConstantLongInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/ConstantMethodHandleInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/ConstantMethodTypeInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/ConstantMethodrefInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/ConstantNameAndTypeInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/ConstantStringInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/ConstantUTF8Info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/ConstantValueAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/DeprecatedAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/ExceptionsAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/LineNumberTableAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/LocalVariableTableAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/SourceFileAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/StackMapTableAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/SyntheticAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/impl/UnparsedAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classpath/ClassPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classpath/ReadClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classpath/beans/CompositeEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classpath/beans/DirEntiry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classpath/beans/Entry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classpath/beans/WildcardEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/classpath/beans/ZipEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/cmdparse/Cmd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/cmdparse/Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/BranchInstruction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/Factory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/Index16Instruction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/Index8Instruction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/Instruction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/NoOperandsInstruction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/RETURN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/base/Branch_logic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/base/BytecodeReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/base/DREM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/base/FREM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/base/IREM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/base/LREM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/base/WIDE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/comparisons/DCMPG.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/comparisons/DCMPL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/comparisons/FCMPG.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/comparisons/FCMPL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/comparisons/IFEQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/comparisons/IFGE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/comparisons/IFGT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/comparisons/IFLE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/comparisons/IFLT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/comparisons/IFNE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/comparisons/IF_ICMPEQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/comparisons/IF_ICMPGE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/comparisons/IF_ICMPGT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/comparisons/IF_ICMPLE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/comparisons/IF_ICMPLT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/comparisons/IF_ICMPNE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/comparisons/LCMP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/constants/ACONST_NULL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/constants/BIPUSH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/constants/DCONST_0.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/constants/DCONST_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/constants/FCONST_0.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/constants/FCONST_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/constants/FCONST_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/constants/ICONST_0.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/constants/ICONST_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/constants/ICONST_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/constants/ICONST_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/constants/ICONST_4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/constants/ICONST_5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/constants/ICONST_M1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/constants/LCONST_0.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/constants/LCONST_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/constants/NOP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/constants/SIPUSH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/control/GOTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/control/LOOKUP_SWITCH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/control/TABLE_SWITCH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/conversions/D2F.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/conversions/D2I.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/conversions/D2L.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/conversions/IF_ACMPEN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/conversions/IF_ACMPEQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/extended/GOTO_W.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/extended/IFNOTNULL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/extended/IFNULL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/loads/ILOAD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/loads/ILOAD_0.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/loads/ILOAD_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/loads/ILOAD_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/loads/ILOAD_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/math/IADD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/math/IAND.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/math/IINC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/math/IOR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/math/ISHL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/math/ISHR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/math/IUSHR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/math/IXOR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/math/LADD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/math/LAND.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/math/LOR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/math/LSHL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/math/LSHR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/math/LUSHR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/math/LXOR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/stack/DUP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/stack/POP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/stack/POP2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/stack/SWAP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/stores/ISTORE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/stores/ISTORE_0.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/stores/ISTORE_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/stores/ISTORE_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/instructions/stores/ISTORE_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/rtda/Frame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/rtda/LocalVars.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/rtda/OperandStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/rtda/Slot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/rtda/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/rtda/StartJVM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/rtda/Thread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/utils/ByteToString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch05/utils/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ch3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ch5_code.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ch5_result.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch04/RunTime/Frame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch04/RunTime/LocalVars.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch04/RunTime/OperandStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch04/RunTime/Slot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch04/RunTime/Stack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch04/RunTime/StartJVM.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch04/RunTime/Thread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch04/classfile/ClassFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch04/classfile/ClassFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch04/classfile/beans/impl/CodeAttribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch04/classfile/beans/impl/CodeAttribute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch04/RunTime/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch04/rtda/Frame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch04/RunTime/LocalVars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch04/rtda/LocalVars.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch04/RunTime/OperandStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch04/rtda/OperandStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch04/RunTime/Slot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch04/rtda/Slot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch04/RunTime/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch04/rtda/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch04/RunTime/StartJVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch04/rtda/StartJVM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch04/RunTime/Thread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch04/rtda/Thread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch04/classfile/ClassFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch04/classfile/ClassFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch04/classfile/beans/impl/CodeAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch04/classfile/beans/impl/CodeAttribute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/demo.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ch3_field.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jvm/META-INF/jvm.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jvm/ch05/classfile/beans/ConstantPoolParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm/ch05/classfile/beans/ConstantPoolParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch05/classfile/beans/ConstantPoolParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch05/classfile/beans/ConstantPoolParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +61,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -365,7 +212,12 @@
       <workItem from="1588123882288" duration="11360000" />
       <workItem from="1588469797300" duration="16724000" />
       <workItem from="1588514788358" duration="257000" />
-      <workItem from="1588558016926" duration="31067000" />
+      <workItem from="1588558016926" duration="31069000" />
+      <workItem from="1588638760212" duration="610000" />
+      <workItem from="1588663294830" duration="599000" />
+      <workItem from="1589422419436" duration="92000" />
+      <workItem from="1593956939934" duration="825000" />
+      <workItem from="1594037709194" duration="7524000" />
     </task>
     <servers />
   </component>
@@ -385,7 +237,6 @@
       <screen x="0" y="0" width="1386" height="750" />
     </state>
     <state x="509" y="92" key="#com.intellij.ide.util.MemberChooser/1920.-3.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1588592058011" />
-    <state x="509" y="92" key="#com.intellij.ide.util.MemberChooser/1920.0.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1582881647376" />
     <state x="469" y="165" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1588572910829">
       <screen x="0" y="0" width="1386" height="750" />
     </state>
@@ -394,38 +245,30 @@
       <screen x="0" y="0" width="1386" height="750" />
     </state>
     <state x="474" y="269" width="437" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1920.-3.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1588489758959" />
-    <state x="319" y="0" key="CommitChangelistDialog2" timestamp="1582972900708">
-      <screen x="0" y="0" width="1386" height="750" />
-    </state>
-    <state x="319" y="0" key="CommitChangelistDialog2/1920.0.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1582972900708" />
     <state x="520" y="130" key="FileChooserDialogImpl" timestamp="1588587097224">
       <screen x="0" y="0" width="1386" height="750" />
     </state>
     <state x="520" y="130" key="FileChooserDialogImpl/1920.-3.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1588587097224" />
-    <state width="1343" height="241" key="GridCell.Tab.0.bottom" timestamp="1588597373853">
+    <state width="1387" height="331" key="GridCell.Tab.0.bottom" timestamp="1594090611430">
       <screen x="0" y="0" width="1386" height="750" />
     </state>
-    <state width="1343" height="241" key="GridCell.Tab.0.bottom/1920.-3.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1588597373853" />
+    <state width="1387" height="331" key="GridCell.Tab.0.bottom/1920.-3.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1594090611430" />
     <state width="1343" height="231" key="GridCell.Tab.0.bottom/1920.-3.1386.750/0.0.1386.750@1920.-3.1386.750" timestamp="1587992786748" />
-    <state width="1344" height="24" key="GridCell.Tab.0.bottom/1920.0.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1582974657410" />
-    <state width="1343" height="241" key="GridCell.Tab.0.center" timestamp="1588597373852">
+    <state width="1387" height="331" key="GridCell.Tab.0.center" timestamp="1594090611428">
       <screen x="0" y="0" width="1386" height="750" />
     </state>
-    <state width="1343" height="241" key="GridCell.Tab.0.center/1920.-3.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1588597373852" />
+    <state width="1387" height="331" key="GridCell.Tab.0.center/1920.-3.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1594090611428" />
     <state width="1343" height="231" key="GridCell.Tab.0.center/1920.-3.1386.750/0.0.1386.750@1920.-3.1386.750" timestamp="1587992786748" />
-    <state width="1344" height="24" key="GridCell.Tab.0.center/1920.0.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1582974657410" />
-    <state width="1343" height="241" key="GridCell.Tab.0.left" timestamp="1588597373852">
+    <state width="1387" height="331" key="GridCell.Tab.0.left" timestamp="1594090611428">
       <screen x="0" y="0" width="1386" height="750" />
     </state>
-    <state width="1343" height="241" key="GridCell.Tab.0.left/1920.-3.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1588597373852" />
+    <state width="1387" height="331" key="GridCell.Tab.0.left/1920.-3.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1594090611428" />
     <state width="1343" height="231" key="GridCell.Tab.0.left/1920.-3.1386.750/0.0.1386.750@1920.-3.1386.750" timestamp="1587992786748" />
-    <state width="1344" height="24" key="GridCell.Tab.0.left/1920.0.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1582974657410" />
-    <state width="1343" height="241" key="GridCell.Tab.0.right" timestamp="1588597373852">
+    <state width="1387" height="331" key="GridCell.Tab.0.right" timestamp="1594090611429">
       <screen x="0" y="0" width="1386" height="750" />
     </state>
-    <state width="1343" height="241" key="GridCell.Tab.0.right/1920.-3.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1588597373852" />
+    <state width="1387" height="331" key="GridCell.Tab.0.right/1920.-3.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1594090611429" />
     <state width="1343" height="231" key="GridCell.Tab.0.right/1920.-3.1386.750/0.0.1386.750@1920.-3.1386.750" timestamp="1587992786748" />
-    <state width="1344" height="24" key="GridCell.Tab.0.right/1920.0.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1582974657410" />
     <state width="1343" height="231" key="GridCell.Tab.1.bottom" timestamp="1587992786748">
       <screen x="1920" y="-3" width="1386" height="750" />
     </state>
@@ -450,35 +293,22 @@
       <screen x="0" y="0" width="1386" height="750" />
     </state>
     <state width="201" height="457" key="HiddenNamespacesPopup/1920.-3.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1587968652773" />
-    <state x="221" y="0" key="SettingsEditor" timestamp="1582724009761">
+    <state x="197" y="21" key="SettingsEditor" timestamp="1594090658940">
       <screen x="0" y="0" width="1386" height="750" />
     </state>
-    <state x="221" y="0" key="SettingsEditor/1920.0.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1582724009761" />
-    <state x="499" y="296" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582972903381">
+    <state x="197" y="21" key="SettingsEditor/1920.-3.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1594090658940" />
+    <state x="348" y="174" width="1400" height="662" maximized="true" key="dock-window-1" timestamp="1594096203112">
       <screen x="0" y="0" width="1386" height="750" />
     </state>
-    <state x="499" y="296" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1582972903381" />
-    <state x="2116" y="110" width="1006" height="608" key="dock-window-1" timestamp="1582856980545">
-      <screen x="1920" y="0" width="1386" height="750" />
-    </state>
-    <state x="2116" y="110" width="1006" height="608" key="dock-window-1/1920.0.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1582856980545" />
-    <state x="390" y="0" width="698" height="750" key="find.popup" timestamp="1588597143673">
+    <state x="348" y="174" width="1400" height="662" maximized="true" key="dock-window-1/1920.-3.1386.750/0.0.1386.750@1920.-3.1386.750" timestamp="1594096203112" />
+    <state x="465" y="0" width="698" height="750" key="find.popup" timestamp="1594090329858">
       <screen x="0" y="0" width="1386" height="750" />
     </state>
-    <state x="390" y="0" width="698" height="750" key="find.popup/1920.-3.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1588597143673" />
-    <state x="390" y="0" width="698" height="807" key="find.popup/1920.0.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1582971154309" />
-    <state x="70" y="69" key="new project wizard" timestamp="1582867966495">
-      <screen x="0" y="0" width="1386" height="750" />
+    <state x="465" y="0" width="698" height="750" key="find.popup/1920.-3.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1594090329858" />
+    <state x="2293" y="105" width="672" height="642" key="search.everywhere.popup" timestamp="1594097850368">
+      <screen x="1920" y="-3" width="1386" height="750" />
     </state>
-    <state x="70" y="69" key="new project wizard/1920.0.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1582867966495" />
-    <state x="350" y="162" key="run.anything.popup" timestamp="1582970415269">
-      <screen x="0" y="0" width="1386" height="750" />
-    </state>
-    <state x="350" y="162" key="run.anything.popup/1920.0.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1582970415269" />
-    <state x="373" y="108" width="672" height="642" key="search.everywhere.popup" timestamp="1588597141831">
-      <screen x="0" y="0" width="1386" height="750" />
-    </state>
-    <state x="373" y="108" width="672" height="642" key="search.everywhere.popup/1920.-3.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1588597141831" />
-    <state x="373" y="108" width="672" height="642" key="search.everywhere.popup/1920.0.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1582971150878" />
+    <state x="373" y="108" width="672" height="642" key="search.everywhere.popup/1920.-3.1386.750/0.0.1386.750@0.0.1386.750" timestamp="1594090086169" />
+    <state x="2293" y="105" width="672" height="642" key="search.everywhere.popup/1920.-3.1386.750/0.0.1386.750@1920.-3.1386.750" timestamp="1594097850368" />
   </component>
 </project>
