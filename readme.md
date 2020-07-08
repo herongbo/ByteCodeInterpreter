@@ -28,7 +28,7 @@ java -cp D:\\path\to\classes;lib\a.jar;lib\c.zip Test
 解析class文件
 解析magicnumber，minorVersion，majorVersion，常量池，类访问标志，类名，超类，（接口），字段，属性表
 ```java
-String[] cmdArgs = {"java", "-cp", D:\\path", "ch03/8.cmdparse.Parser"};
+String[] cmdArgs = {"java", "-cp", D:\\path", "ch03.cmdparse.Parser"};
 ```
 ![ch3](./img/ch3.png)
 
